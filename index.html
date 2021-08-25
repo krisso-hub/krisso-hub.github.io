@@ -61,7 +61,7 @@
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.PNG" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">Class</a></li>
+									<li><a href="https://www.linkedin.com/in/ndubuisi-asogwa-024b371b8/" class="button large">LInkedIn Page</a></li>
 								</ul>
 							</article>
 
@@ -74,7 +74,9 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.PNG" alt="" /></a>
-									<p>This is Devops in AWS using CodeCommit as code source repository. CodeBuild to test and validate the code.
+									<p>This is Devops in AWS using CodeCommit as source code repository. Generated SSH private and public key and uploaded public key to AWS account to serve as user name and 
+										private key as password to access Code Commit. The code is pushed to Code Commit and CodeBuild test and validate the code. The code that fails the test
+										will be roledback, debugged and pushed back to Code Commit.
 										And CodeDeploy to deploy the application to Ec2 Instances. CodePipeline to cordinate the three stages from source to destination
 									   taking artifactory input from S3 bucket.</p>
 									<ul class="actions special">
@@ -94,59 +96,53 @@
 								Elastic Container Service in two regions. CloudWatch monitor resources utilization. Route 53 route traffic to two
 							Elastic load balance in two regions and the Elastic load balance is configured with ssl certification.  </p>
 									<ul class="actions special">
+										<li><a href="https://github.com/krisso-hub/elastic-kubernetes-service.git" class="button">Source Code</a></li>
+									</ul>
+
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="#">Project III<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.PNG" alt="" /></a>
+									<p>This is project invovles management of container(pods) orchestration using Elastic Kubernete Service on AWS.
+										eksctl command tool is used to create eks cluster and nodegroup with specific AMI. The nodes are autoscaled with scaling policy
+										to scale out or scale in as needed. Eksctl utility was used to create kube config file to enable kubectl communicate with 
+										API control plane securely. Calico network service was applied using calico manifest. Ingress controller created to expose
+										the service mapping the pods through Network load balance. Iam identity mapping with roles was created within eks cluster
+										for  users. Prometheus was deployed within the cluster to gather application specific metrics and CloudWatch was used to monitor 
+										every other component of EKS eco system.
+									  </p>
+									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/Devops-ECS-Multi-Region-Deployment" class="button">Source Code</a></li>
 									</ul>
 								</article>
 								<article>
 									
-									
+									<header>
+										
+										<h2><a href="#">Project IV<br />
+										</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.PNG" alt="" /></a>
+									<p>This Project is on using of Real User monitoring and Synthetic monitoring tool to monitor a java package web container
+		                              application running on Tomcat server embedded with in memory SQl database. The real user monitoring tool
+									  focus on monitoring transactions throughput, Response time and error rate using Riverbed software of SteelCentral SaaS to collect the data metric and push to Datagod for 
+									  dashboarding. And the synthetic monitoring uses
+									  Pingdom software to  monitor uptime of the web application
+										.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/krisso-hub/pet_clinic.git" class="button">Source code</a></li>
+									</ul>
+								</article>
+								<article>
 
-					</div>
+									
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Indianaolis, IN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									
-									<li><a href="https://github.com/krisso-hub" class= "icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
+				
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
