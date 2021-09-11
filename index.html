@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Portifolio HTML5 UP</title>
+		<title>Portifolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -75,9 +75,9 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.PNG" alt="" /></a>
 									<p>This is Devops in AWS using CodeCommit as source code repository. Generated SSH private and public key and uploaded public key to AWS account to serve as user name and 
-										private key as password to access Code Commit. The code is pushed to Code Commit and CodeBuild test and validate the code. The code that fails the test
+										private key as password to access Code Commit. The code is pushed to Code Commit and CodeBuild, test and validate the code. The code that fails the test
 										will be roledback, debugged and pushed back to Code Commit.
-										And CodeDeploy to deploy the application to Ec2 Instances. CodePipeline to cordinate the three stages from source to destination
+										And CodeDeploy deploy the application to Ec2 Instances. CodePipeline cordinate the three stages from source to destination
 									   taking artifactory input from S3 bucket.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/Devops-aws-ci-cd" class="button">Source Code</a></li>
@@ -92,9 +92,9 @@
 									<a href="#" class="image fit"><img src="images/pic03.PNG" alt="" /></a>
 									<p>This project is devops focused. It uses Elastic Container Service with other developer tools in AWS to automate application deployment.
 										The data is stored in DynamoDB global table in two region with stream enabled. Elastic Container Registry contain docker images.
-									CodeCommit host source code repository. CodeBuild used buildspec.yml to build the application and CodeDeploy deploy the app to
+									CodeCommit host source code repository. CodeBuild uses buildspec.yml to build the application and CodeDeploy deploy the app to
 								Elastic Container Service in two regions. CloudWatch monitor resources utilization. Route 53 route traffic to two
-							Elastic load balance in two regions and the Elastic load balance is configured with ssl certification.  </p>
+							Elastic load balance in two regions and the Elastic load balancer is configured with ssl certificate.  </p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/elastic-kubernetes-service.git" class="button">Source Code</a></li>
 									</ul>
@@ -110,10 +110,10 @@
 									<p>This project involves management of container(pods) orchestration using Elastic Kubernetes Service on AWS.
 										eksctl command tool is used to create eks cluster and nodegroup with specific AMI. The nodes are autoscaled with scaling policy
 										to scale out or scale in as needed. Eksctl utility was used to create kube config file to enable kubectl communicate with 
-										API control plane securely. Calico network service was applied using calico manifest. Ingress controller created to expose
-										the service mapping the pods through Network load balance. Iam identity mapping with roles waws created within eks cluster
-										for  users. Prometheus was deployed within the cluster to gather application specific metrics and CloudWatch was used to monitor 
-										every other component of EKS eco system.
+										API control plane securely. And Ingress controller was created to expose
+										the service and map the pods to Network load balancer. 
+										Prometheus was deployed within the cluster to gather application specific metrics.
+										
 									  </p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/Devops-ECS-Multi-Region-Deployment" class="button">Source Code</a></li>
@@ -127,22 +127,45 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic04.PNG" alt="" /></a>
-									<p>This Project is on using of Real User monitoring and Synthetic monitoring tool to monitor a java package web container
-		                              application running on Tomcat server embedded with in memory SQl database. The real user monitoring tool
-									  focus on monitoring transactions throughput, Response time and error rate using Riverbed software of SteelCentral SaaS to collect the data metric and push to Datagod for 
-									  dashboarding. And the synthetic monitoring uses
-									  Pingdom software to  monitor uptime of the web application
+									<p>This Project is based on using of Riverbed a monitoring software tool to monitor a java based web container
+		                              application running on Tomcat server with in-memory SQl database. It monitors
+									  transactions throughput, Response time and error rate of the application. It subsequently send the  metrics to Datagod software for 
+									  for visualization. And the synthetic monitoring tool,
+									  Pingdom software was used to  monitor uptime of the web application.
 										.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/pet_clinic.git" class="button">Source code</a></li>
 									</ul>
 								</article>
-								<article>
+							
 
-									
+								
 
-				<!-- Footer -->
 				
+				
+								</div>
+				
+				<!-- Footer -->
+				<footer id="footer">
+					
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>1234 Somewhere Road <br />
+							Indianapolis, IN 00000</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(000) 000-0000</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">info@untitled.tld</a></p>
+						</section>
+						
+					</section>
+				</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
