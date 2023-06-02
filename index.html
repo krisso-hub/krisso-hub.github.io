@@ -19,9 +19,9 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>This is<br />
-						My Portifolio</h1>
-						<p>This is a show case of some my projects <a href="https://github.com/krisso-hub">@Krisso-hub</a> 
+						<h1>The<br />
+						Portifolios</h1>
+						<p>This is a list of some projects <a href="https://github.com/krisso-hub">@Krisso-hub</a> 
 						</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -74,11 +74,12 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.PNG" alt="" /></a>
-									<p>This is Devops in AWS using CodeCommit as source code repository. Generated SSH private and public key and uploaded public key to AWS account to serve as user name and 
-										private key as password to access Code Commit. The code is pushed to Code Commit and CodeBuild, test and validate the code. The code that fails the test
-										will be roledback, debugged and pushed back to Code Commit.
-										And CodeDeploy deploy the application to Ec2 Instances. CodePipeline cordinate the three stages from source to destination
-									   taking artifactory input from S3 bucket.</p>
+									<p>
+In this AWS DevOps workflow, CodeCommit is used as the source code repository. SSH private and public keys are generated, and the public key is uploaded to the AWS account to serve as the username, while the private key acts as the password for accessing CodeCommit. The code is then pushed to CodeCommit for version control.
+
+To ensure code quality, the code undergoes testing and validation using CodeBuild. If the code fails the tests, it is rolled back, debugged, and pushed back to CodeCommit for further modifications.
+
+Once the code passes the tests, CodeDeploy is used to deploy the application to EC2 instances. CodePipeline acts as the orchestrator, coordinating the three stages: source, build, and deployment. It takes input from an artifact repository, typically an S3 bucket, to move the code from source to destination. This allows for a streamlined and automated deployment process.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/Devops-aws-ci-cd" class="button">Source Code</a></li>
 									</ul>
@@ -90,11 +91,14 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.PNG" alt="" /></a>
-									<p>This project is devops focused. It uses Elastic Container Service with other developer tools in AWS to automate application deployment.
-										The data is stored in DynamoDB global table in two region with stream enabled. Elastic Container Registry contain docker images.
-									CodeCommit host source code repository. CodeBuild uses buildspec.yml to build the application and CodeDeploy deploy the app to
-								Elastic Container Service in two regions. CloudWatch monitor resources utilization. Route 53 route traffic to two
-							Elastic load balance in two regions and the Elastic load balancer is configured with ssl certificate.  </p>
+									<p>
+This project emphasizes DevOps practices and leverages AWS services to automate application deployment. Elastic Container Service (ECS) is utilized alongside other developer tools within AWS.
+
+Data is stored in a DynamoDB global table, spanning two regions and enabling data streams for real-time updates. Docker images are stored in Elastic Container Registry (ECR), while CodeCommit serves as the host for the source code repository.
+
+CodeBuild employs a buildspec.yml file to build the application, and CodeDeploy handles the deployment of the application to ECS in both regions. CloudWatch is utilized to monitor resource utilization and gather insights.
+
+To distribute traffic effectively, Route 53 is used to route requests to two Elastic Load Balancers (ELBs) located in separate regions. The ELBs are configured with an SSL certificate to ensure secure communication.  </p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/elastic-kubernetes-service.git" class="button">Source Code</a></li>
 									</ul>
@@ -107,12 +111,11 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic05.PNG" alt="" /></a>
-									<p>This project involves management of container(pods) orchestration using Elastic Kubernetes Service on AWS.
-										eksctl command tool is used to create eks cluster and nodegroup with specific AMI. The nodes are autoscaled with scaling policy
-										to scale out or scale in as needed. Eksctl utility was used to create kube config file to enable kubectl communicate with 
-										API control plane securely. And Ingress controller was created to expose
-										the service and map the pods to Network load balancer. 
-										Prometheus was deployed within the cluster to gather application specific metrics.
+									<p>This project focuses on managing container orchestration using Elastic Kubernetes Service (EKS) on AWS. The eksctl command tool is employed to create an EKS cluster and node group, utilizing a specific Amazon Machine Image (AMI).
+
+To ensure scalability, the nodes are autoscaled using a scaling policy, allowing for scaling out or scaling in based on demand. The eksctl utility is used to generate a kubeconfig file, enabling secure communication between kubectl and the API control plane.
+
+An Ingress controller is installed to expose the service and map the pods to a Network Load Balancer, enabling external access. Additionally, Prometheus is deployed within the cluster to collect application-specific metrics for monitoring purposes.
 										
 									  </p>
 									<ul class="actions special">
@@ -127,12 +130,10 @@
 										</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic04.PNG" alt="" /></a>
-									<p>This Project is based on using of Riverbed a monitoring software tool to monitor a java based web container
-		                              application running on Tomcat server with in-memory SQl database. It monitors
-									  transactions throughput, Response time and error rate of the application. It subsequently send the  metrics to Datagod software for 
-									  for visualization. And the synthetic monitoring tool,
-									  Pingdom software was used to  monitor uptime of the web application.
-										.</p>
+									<p>This project revolves around utilizing the Riverbed monitoring software tool to monitor a web container application based on Java, which runs on a Tomcat server with an in-memory SQL database. The monitoring process focuses on measuring transaction throughput, response time, and error rate of the application.
+
+The collected metrics are then sent to the Datagod software for visualization and analysis. Additionally, a synthetic monitoring tool called Pingdom software is employed to monitor the uptime of the web application, ensuring its availability and reliability.
+										</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/pet_clinic.git" class="button">Source code</a></li>
 									</ul>
