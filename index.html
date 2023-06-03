@@ -20,7 +20,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>The<br />
-						Portifolios</h1>
+						Portifolio</h1>
 						<p>This is a list of some projects <a href="https://github.com/krisso-hub">@Krisso-hub</a> 
 						</p>
 						<ul class="actions">
@@ -75,11 +75,11 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.PNG" alt="" /></a>
 									<p>
-In this AWS DevOps workflow, CodeCommit is used as the source code repository. SSH private and public keys are generated, and the public key is uploaded to the AWS account to serve as the username, while the private key acts as the password for accessing CodeCommit. The code is then pushed to CodeCommit for version control.
+In this AWS DevOps workflow, CodeCommit is used as the source code repository. SSH private and public keys are generated, and the public key is uploaded to the AWS account for secure authentication to CodeCommit. The code is then pushed to CodeCommit for version control.
 
 To ensure code quality, the code undergoes testing and validation using CodeBuild. If the code fails the tests, it is rolled back, debugged, and pushed back to CodeCommit for further modifications.
 
-Once the code passes the tests, CodeDeploy is used to deploy the application to EC2 instances. CodePipeline acts as the orchestrator, coordinating the three stages: source, build, and deployment. It takes input from an artifact repository, typically an S3 bucket, to move the code from source to destination. This allows for a streamlined and automated deployment process.</p>
+Once the code passes the tests, CodeDeploy is used to deploy the application to EC2 instances. CodePipeline acts as the orchestrator, coordinating the three stages: source, build, and deployment. It takes input from repository, typically Github, to move the code from source to destination. This allows for a streamlined and automated deployment process.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/krisso-hub/Devops-aws-ci-cd" class="button">Source Code</a></li>
 									</ul>
